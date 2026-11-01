@@ -1,8 +1,7 @@
 name: Python package
+# Deactivated: automatic tag-push trigger disabled so no pending or future
+# runs are started. Workflow can still be run manually via workflow_dispatch.
 on:
-  push:
-    tags:
-      - 'v*.*.*'
   workflow_dispatch:
     inputs:
       tag:
